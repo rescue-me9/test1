@@ -1,0 +1,52 @@
+<!-- 兑换码弹窗 HTML 结构 -->
+<div id="redeemDialog" class="redeem_dialog">
+    <div class="redeem_container">
+        <div class="redeem_header">
+            <h2 class="redeem_title">🎁 兑换码</h2>
+            <p class="redeem_subtitle">请输入您的兑换码</p>
+        </div>
+        
+        <form class="redeem_form">
+            <div class="redeem_input_group">
+                <input 
+                    type="text" 
+                    id="redeemCodeInput" 
+                    class="redeem_input" 
+                    placeholder="输入兑换码..."
+                    autocomplete="off"
+                />
+            </div>
+            
+            <div id="redeemLoading" class="redeem_loading">
+                <div class="spinner"></div>
+                <p>验证中...</p>
+            </div>
+            
+            <div class="redeem_button_group">
+                <button 
+                    type="button" 
+                    id="redeemSubmitBtn" 
+                    class="redeem_button redeem_button_submit"
+                >
+                    验证兑换
+                </button>
+                <button 
+                    type="button" 
+                    id="redeemCancelBtn" 
+                    class="redeem_button redeem_button_cancel"
+                >
+                    取消
+                </button>
+            </div>
+        </form>
+        
+        <div id="redeemMessage" class="redeem_message"></div>
+    </div>
+</div>
+
+<!-- 页面中添加白色按钮用于打开兑换弹窗 -->
+<button class="white_button" onclick="openRedeemDialog()">🎟️ 输入兑换码</button>
+
+<!-- 引入样式和脚本 -->
+<link rel="stylesheet" href="redeem/redeem.css">
+<script src="redeem/redeem.js"></script>
