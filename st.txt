@@ -1,0 +1,26 @@
+# 1. 安装 Termux（Google Play）
+# 2. 打开 Termux
+
+pkg install git
+
+# 3. 配置 Git
+git config --global user.name "你的用户名"
+git config --global user.email "你的邮箱"
+
+# 4. 进入你的项目文件夹
+cd /storage/emulated/0/Download/菜鸡开源
+
+# 5. 初始化 Git
+git init
+
+# 6. 添加所有文件
+git add .
+
+# 7. 提交
+git commit -m "美化UI"
+
+# 8. 关联远程仓库
+git remote add origin https://你的用户名:你的token@github.com/rescue-me9/test1.git
+
+# 9. 推送
+git push -u origin main
